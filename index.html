@@ -1,1 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anne's Gfx Render Shop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Anne's Gfx Render Shop</h1>
+        <button class="cart-button" onclick="toggleCart()">🛒 View Cart</button>
+    </header>
+    <div class="products">
+        <div class="product">
+            <img src="annebae.png" alt="Annebae Gfx Render">
+            <h3>Annebae Gfx Render</h3>
+            <p>$20</p>
+            <button onclick="openProductPage('Annebae Gfx Render', 'annebae.png', 'This is a premium Gfx render.', 20)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="lisa.png" alt="Lisa Gaming Gfx Render">
+            <h3>Lisa Gaming Gfx Render</h3>
+            <p>$20</p>
+            <button onclick="openProductPage('Lisa Gaming Gfx Render', 'lisa.png', 'Lisa Gaming’s stylish render.', 20)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="curious.png" alt="Curious Yapper Gfx Render">
+            <h3>Curious Yapper Gfx Render</h3>
+            <p>$20</p>
+            <button onclick="openProductPage('Curious Yapper Gfx Render', 'curious.png', 'A quirky Yapper Gfx render.', 20)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="goblin.png" alt="Yellow Goblin Shrugging Gfx Render">
+            <h3>Yellow Goblin Shrugging Gfx Render</h3>
+            <p>$20</p>
+            <button onclick="openProductPage('Yellow Goblin Shrugging Gfx Render', 'goblin.png', 'A fun goblin render.', 20)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="uglycow.png" alt="Ugly Cow Mr Clean Gfx Render">
+            <h3>Ugly Cow Mr Clean Gfx Render</h3>
+            <p>$20</p>
+            <button onclick="openProductPage('Ugly Cow Mr Clean Gfx Render', 'uglycow.png', 'A unique, funny Gfx render.', 20)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="redblockies.png" alt="Red Blockies Gfx Render">
+            <h3>Red Blockies Gfx Render</h3>
+            <p>$20</p>
+            <button onclick="openProductPage('Red Blockies Gfx Render', 'redblockies.png', 'A bold blocky Gfx render.', 20)">Buy Now</button>
+        </div>
+        <div class="product">
+            <img src="norven.png" alt="Norven Gfx Render">
+            <h3>Norven Gfx Render</h3>
+            <p>$20</p>
+            <button onclick="openProductPage('Norven Gfx Render', 'norven.png', 'A clean, sleek Gfx render.', 20)">Buy Now</button>
+        </div>
+    </div>
+
+    <div id="cart" class="cart hidden">
+        <h2>Your Cart</h2>
+        <div id="cart-items"></div>
+        <div class="cart-total">
+            <h3>Total: $<span id="cart-total">0</span></h3>
+            <button onclick="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
 
